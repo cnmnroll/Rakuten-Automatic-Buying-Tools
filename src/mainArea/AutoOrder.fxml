@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!--    <fx:script>
+ 		function urlChange(e){
+ 			var url = urlField.getText();
+ 			urlField.setText("");
+ 			webView.getEngine().load(url);
+ 		}  
+   </fx:script> -->
+
+<FlowPane prefHeight="52.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AutoOrderController">
+         <children>
+         	<HBox>
+            <children>
+               	<ComboBox fx:id="searchBox" prefWidth="150.0" />
+				<TextField fx:id="urlField" prefHeight="24.0" prefWidth="762.0" />
+				<Button fx:id="entryButton" disable="true" mnemonicParsing="false" prefHeight="27.0" prefWidth="107.0" text="追加" />
+            </children>
+      		</HBox>
+           	<HBox fx:id="main" prefHeight="349.0" prefWidth="1018.0">
+               <children>
+                  <WebView fx:id="webView" prefHeight="349.0" prefWidth="1063.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="13.0" prefWidth="912.0" />
+         </children>
+      </FlowPane>

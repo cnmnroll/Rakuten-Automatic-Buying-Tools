@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="350.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="addTask" layoutX="-1.0" layoutY="398.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="350.0" text="登録" />
+      <TextField alignment="CENTER" layoutY="28.0" prefHeight="27.0" prefWidth="350.0" promptText="商品名" />
+      <Text layoutX="154.0" layoutY="13.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="商品名" textOrigin="CENTER" wrappingWidth="43.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="addOption" layoutY="373.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="350.0" text="オプション設定" />
+      <VBox fx:id="optionArea" layoutX="-1.0" layoutY="55.0" prefHeight="318.0" prefWidth="350.0" />
+   </children>
+</fx:root>
